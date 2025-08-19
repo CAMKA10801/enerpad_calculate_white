@@ -96,10 +96,10 @@
     <button class="calculate" onclick="calculate()">計算</button>
     <button class="reset" onclick="resetForm()">重設</button>
 
-    <div class="result" id="result">請輸入數值進行計算</div>
+    <div class="result" id="result">請輸入數值並點擊計算</div>
 
     <details>
-      <summary> 查看計算公式與教學說明</summary>
+      <summary> 查看功率計算公式與說明</summary>
       <p>使用時間公式：<br><b>容量 (Wh) × 0.8 ÷ 功率 (W)</b></p>
       <p>為何乘 0.8？以預留逆變損耗與安全餘裕，做保守估算。</p>
       <p>如何從電器標示換算功率 (W)：<br><b>電壓 (V) × 電流 (A) = 功率 (W)</b></p>
@@ -150,7 +150,7 @@
       modelSel.selectedIndex = 0;
       syncCapacity();
       powerInput.value = '';
-      resultDiv.innerHTML = '請輸入數值進行計算';
+      resultDiv.innerHTML = '請輸入數值並點擊計算';
     }
 
     // 初始化
